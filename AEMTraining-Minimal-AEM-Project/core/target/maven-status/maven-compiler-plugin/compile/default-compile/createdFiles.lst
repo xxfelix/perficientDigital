@@ -1,6 +1,0 @@
-com\perficient\adobe\digital\core\listeners\SimpleResourceListener.class
-com\perficient\adobe\digital\core\filters\LoggingFilter.class
-com\perficient\adobe\digital\core\package-info.class
-com\perficient\adobe\digital\core\schedulers\SimpleScheduledTask.class
-com\perficient\adobe\digital\core\models\HelloWorldModel.class
-com\perficient\adobe\digital\core\servlets\SimpleServlet.class
