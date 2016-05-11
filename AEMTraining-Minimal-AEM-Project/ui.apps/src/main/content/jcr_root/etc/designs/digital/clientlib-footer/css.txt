@@ -1,2 +1,0 @@
-bootstrap.css
-perficient-main.css
