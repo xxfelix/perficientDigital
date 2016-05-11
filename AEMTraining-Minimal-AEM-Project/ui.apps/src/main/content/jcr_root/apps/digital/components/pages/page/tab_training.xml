@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Panel"
+    title="Training">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <trainer
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Trainer"
+            name="./trainer"
+            xtype="textfield"/>
+        <date
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Training Date"
+            name="./trainingDate"
+            xtype="datefield"/>
+    </items>
+</jcr:root>
