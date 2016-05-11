@@ -1,0 +1,104 @@
+.hero .hero-client .multiple {
+  display: block;
+  background-image: none;
+  background-color: red; }
+
+.hero.hmp-02 .hero-content h1 {
+  position: absolute;
+  left: 10%;
+  top: 45%; }
+
+#hero-main .hero-content {
+  position: absolute;
+  top: 40%; }
+
+@media (min-width: 62em) {
+  .tiles-section .container .tiles-row:nth-child(even) .tile-flex .tile {
+    width: 100%; }
+    .tiles-section .container .tiles-row:nth-child(even) .tile-flex .tile .tile-img {
+      float: none; }
+
+  .tiles-section .container .tiles-row .tile-flex {
+    display: table;
+    height: auto;
+    width: 100%; }
+    .tiles-section .container .tiles-row .tile-flex .tile {
+      display: table-row;
+      padding: 5px;
+      margin: auto;
+      clear: both; }
+      .tiles-section .container .tiles-row .tile-flex .tile:nth-child(-n+2) {
+        width: 100%; }
+        .tiles-section .container .tiles-row .tile-flex .tile:nth-child(-n+2) .tile-block.tile-content .tile-content-wrap {
+          padding: 0; }
+      .tiles-section .container .tiles-row .tile-flex .tile:nth-child(3) {
+        width: 100%; }
+        .tiles-section .container .tiles-row .tile-flex .tile:nth-child(3) .tile-block {
+          float: none; }
+          .tiles-section .container .tiles-row .tile-flex .tile:nth-child(3) .tile-block.tile-content {
+            height: auto; }
+            .tiles-section .container .tiles-row .tile-flex .tile:nth-child(3) .tile-block.tile-content .tile-content-wrap {
+              padding: 0; }
+      .tiles-section .container .tiles-row .tile-flex .tile .tile-block {
+        display: table-cell;
+        height: auto; }
+        .tiles-section .container .tiles-row .tile-flex .tile .tile-block.tile-img {
+          float: none;
+          width: 300px; }
+          .tiles-section .container .tiles-row .tile-flex .tile .tile-block.tile-img img {
+            height: auto;
+            width: 100%;
+            display: block;
+            vertical-align: top; }
+        .tiles-section .container .tiles-row .tile-flex .tile .tile-block.tile-content {
+          width: 500px;
+          vertical-align: middle;
+          padding: 2rem; }
+          .tiles-section .container .tiles-row .tile-flex .tile .tile-block.tile-content .tile-content-wrap {
+            width: auto;
+            display: inline-block;
+            padding: 0; } }
+.box-overlay .box .overlay-container.overlay-standard .logo-container {
+  text-align: center;
+  padding-top: 30%; }
+
+.hero-jumbotext.hero .container {
+  left: 50%; }
+  .hero-jumbotext.hero .container .row {
+    position: relative;
+    top: auto;
+    bottom: auto;
+    left: auto;
+    right: auto;
+    display: block; }
+    .hero-jumbotext.hero .container .row .hero-content h1 {
+      margin: auto;
+      font-weight: 600;
+      letter-spacing: -0.01em; }
+      .hero-jumbotext.hero .container .row .hero-content h1 b {
+        font-size: 2.4em;
+        letter-spacing: -0.05em; }
+
+.asset-row .container {
+  display: table;
+  width: 100%; }
+  .asset-row .container .asset-flex {
+    display: table-row; }
+    .asset-row .container .asset-flex .asset {
+      display: table-cell;
+      text-align: center;
+      vertical-align: middle; }
+
+/*Award Cards*/
+.award-card {
+  width: 31.33%; }
+
+/*industries subnav*/
+.industries-subnav .container a {
+  float: left;
+  width: 33%; }
+
+@media (min-width: 62em) {
+  .fifty .fiftyrow .fiftycolumn.list .fiftycontent ul li {
+    display: inline-block;
+    width: 48%; } }
