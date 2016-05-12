@@ -23,6 +23,11 @@
           data-sly-use.clientLib="${'/libs/granite/sightly/templates/clientlib.html'}">
     <meta name="keywords" content="${head.keywords}">
     <meta name="description" content="${head.description}">
+    <meta name="title" content="${head.title}">
+    <meta name="author" content="${properties.author || properties.jcr:createdBy}">
+    <meta name="trainer" content="${properties.trainer}">
+    <sly  data-sly-use.headDate="com.perficient.adobe.digital.core.HeadDate">
+    <meta name="training_date" content="${headDate.date}">
     <sly data-sly-call="${headlibRenderer.headlibs @ designPath=head.designPath}" />
     <sly data-sly-include="author.html" />
     <sly data-sly-include="/libs/cq/cloudserviceconfigs/components/servicelibs/servicelibs.jsp" />

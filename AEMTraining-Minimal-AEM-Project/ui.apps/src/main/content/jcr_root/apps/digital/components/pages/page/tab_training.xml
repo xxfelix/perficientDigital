@@ -11,7 +11,8 @@
         <date
             jcr:primaryType="cq:Widget"
             fieldLabel="Training Date"
+            hideTime="{Boolean}true"
             name="./trainingDate"
-            xtype="datefield"/>
+            xtype="datetime"/>
     </items>
 </jcr:root>
