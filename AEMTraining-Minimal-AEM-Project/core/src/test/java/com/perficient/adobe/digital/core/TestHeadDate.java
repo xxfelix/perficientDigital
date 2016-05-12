@@ -1,7 +1,11 @@
 package com.perficient.adobe.digital.core;
 
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.HashMap;
+
+import javassist.expr.NewArray;
 
 import javax.script.Bindings;
 
@@ -34,7 +38,9 @@ public class TestHeadDate {
     @Test
     public void testGetTitle() throws Exception{
         headDate.init(bindings);
-        Assert.assertEquals("Not equals","2016-05-12", headDate.getDate());
+        SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd");
+        String date = df.format(new Date());
+        Assert.assertEquals("Not equals",date , headDate.getDate());
     }
 
 }
