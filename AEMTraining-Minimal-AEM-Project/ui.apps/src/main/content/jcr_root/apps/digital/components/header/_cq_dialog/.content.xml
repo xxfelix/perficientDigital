@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/tabs"
+            type="nav"/>
+        <items jcr:primaryType="nt:unstructured">
+            <tab1
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Header"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <logo
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Logo"
+                                sling:resourceType="granite/ui/components/foundation/form/fieldset"
+                                title="Logo">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <logoUrl
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                        fieldLabel="Logo URL:"
+                                        name="./logoUrl"
+                                        required="{Boolean}true"
+                                        rootPath="/content/dam"/>
+                                    <altText
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                        fieldLabel="Alt Text:"
+                                        name="./altText"/>
+                                </items>
+                            </logo>
+                            <about
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Abput"
+                                sling:resourceType="granite/ui/components/foundation/form/fieldset"
+                                title="Abput">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <label
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                        fieldLabel="About Label"
+                                        name="./aboutLabel"
+                                        required="{Boolean}true"/>
+                                    <link
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                        fieldLabel="About Link"
+                                        name="./aboutLink"
+                                        required="{Boolean}true"/>
+                                </items>
+                            </about>
+                            <investors
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Investors"
+                                sling:resourceType="granite/ui/components/foundation/form/fieldset"
+                                title="Investors">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <label
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                        fieldLabel="Investors Label"
+                                        name="./investorsLabel"
+                                        required="{Boolean}true"/>
+                                    <link
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                        fieldLabel="Investors Link"
+                                        name="./investorsLink"
+                                        required="{Boolean}true"/>
+                                </items>
+                            </investors>
+                            <careers
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Careers"
+                                sling:resourceType="granite/ui/components/foundation/form/fieldset"
+                                title="Careers">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <label
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                        fieldLabel="Careers Label"
+                                        name="./careersLabel"
+                                        required="{Boolean}true"/>
+                                    <link
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                        fieldLabel="Careers Link"
+                                        name="./careersLink"
+                                        required="{Boolean}true"/>
+                                </items>
+                            </careers>
+                            <contact
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Contact"
+                                sling:resourceType="granite/ui/components/foundation/form/fieldset"
+                                title="Contact">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <label
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                        fieldLabel="Contact Label"
+                                        name="./contactLabel"
+                                        required="{Boolean}true"/>
+                                    <link
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                        fieldLabel="Contact Link"
+                                        name="./contactLink"
+                                        required="{Boolean}true"/>
+                                </items>
+                            </contact>
+                        </items>
+                    </columns>
+                </items>
+            </tab1>
+            <tab2
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Navigation"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <navigation
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/multifield"
+                                class="full-width"
+                                fieldDescription="Click '+' to add a new item"
+                                fieldLabel="Navigation">
+                                <field
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/form/fieldset"
+                                    acs-commons-nested="JSON_STORE"
+                                    name="./navigation">
+                                    <layout
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+                                        method="absolute"/>
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <column
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/container">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <label
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                    fieldLabel="Label"
+                                                    name="./label"
+                                                    required="{Boolean}true"/>
+                                                <link
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                                    fieldLabel="Link"
+                                                    name="./link"
+                                                    required="{Boolean}true"/>
+                                            </items>
+                                        </column>
+                                    </items>
+                                </field>
+                            </navigation>
+                        </items>
+                    </columns>
+                </items>
+            </tab2>
+        </items>
+    </content>
+</jcr:root>

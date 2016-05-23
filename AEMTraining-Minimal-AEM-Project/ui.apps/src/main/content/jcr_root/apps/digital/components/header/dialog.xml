@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab1
+                jcr:primaryType="cq:Panel"
+                title="Header">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <logo
+                        jcr:primaryType="cq:Widget"
+                        collapsed="{Boolean}false"
+                        collapsible="{Boolean}false"
+                        title="Logo"
+                        xtype="dialogfieldset">
+                        <items jcr:primaryType="cq:WidgetCollection">
+                            <logoUrl
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="{Boolean}false"
+                                fieldLabel="Logo URL:"
+                                name="./logoUrl"
+                                rootPath="/content/dam"
+                                xtype="pathfield"/>
+                            <altText
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Alt Text:"
+                                name="./altText"
+                                xtype="textfield"/>
+                        </items>
+                    </logo>
+                    <about
+                        jcr:primaryType="cq:Widget"
+                        collapsed="{Boolean}false"
+                        collapsible="{Boolean}false"
+                        title="Abput"
+                        xtype="dialogfieldset">
+                        <items jcr:primaryType="cq:WidgetCollection">
+                            <label
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="{Boolean}false"
+                                fieldLabel="About Label"
+                                name="./aboutLabel"
+                                xtype="textfield"/>
+                            <link
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="{Boolean}false"
+                                fieldLabel="About Link"
+                                linkPattern="\{0}.html"
+                                name="./aboutLink"
+                                xtype="pathfield"/>
+                        </items>
+                    </about>
+                    <investors
+                        jcr:primaryType="cq:Widget"
+                        collapsed="{Boolean}false"
+                        collapsible="{Boolean}false"
+                        title="Investors"
+                        xtype="dialogfieldset">
+                        <items jcr:primaryType="cq:WidgetCollection">
+                            <label
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="{Boolean}false"
+                                fieldLabel="Investors Label"
+                                name="./investorsLabel"
+                                xtype="textfield"/>
+                            <link
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="{Boolean}false"
+                                fieldLabel="Investors Link"
+                                linkPattern="\{0}.html"
+                                name="./investorsLink"
+                                xtype="pathfield"/>
+                        </items>
+                    </investors>
+                    <careers
+                        jcr:primaryType="cq:Widget"
+                        collapsed="{Boolean}false"
+                        collapsible="{Boolean}false"
+                        title="Careers"
+                        xtype="dialogfieldset">
+                        <items jcr:primaryType="cq:WidgetCollection">
+                            <label
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="{Boolean}false"
+                                fieldLabel="Careers Label"
+                                name="./careersLabel"
+                                xtype="textfield"/>
+                            <link
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="{Boolean}false"
+                                fieldLabel="Careers Link"
+                                linkPattern="\{0}.html"
+                                name="./careersLink"
+                                xtype="pathfield"/>
+                        </items>
+                    </careers>
+                    <contact
+                        jcr:primaryType="cq:Widget"
+                        collapsed="{Boolean}false"
+                        collapsible="{Boolean}false"
+                        title="Contact"
+                        xtype="dialogfieldset">
+                        <items jcr:primaryType="cq:WidgetCollection">
+                            <label
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="{Boolean}false"
+                                fieldLabel="Contact Label"
+                                name="./contactLabel"
+                                xtype="textfield"/>
+                            <link
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="{Boolean}false"
+                                fieldLabel="Contact Link"
+                                linkPattern="\{0}.html"
+                                name="./contactLink"
+                                xtype="pathfield"/>
+                        </items>
+                    </contact>
+                </items>
+            </tab1>
+            <tab2
+                jcr:primaryType="cq:Panel"
+                title="Navigation">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <navigation
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Navigation:"
+                        name="./navigation"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            xtype="multifieldpanel">
+                            <items jcr:primaryType="cq:WidgetCollection">
+                                <label
+                                    jcr:primaryType="cq:Widget"
+                                    allowBlank="{Boolean}false"
+                                    fieldLabel="Label"
+                                    key="label"
+                                    xtype="textfield"/>
+                                <link
+                                    jcr:primaryType="cq:Widget"
+                                    allowBlank="{Boolean}false"
+                                    editable="{Boolean}false"
+                                    fieldLabel="Link"
+                                    key="link"
+                                    xtype="pathfield"/>
+                            </items>
+                        </fieldConfig>
+                    </navigation>
+                </items>
+            </tab2>
+        </items>
+    </items>
+</jcr:root>

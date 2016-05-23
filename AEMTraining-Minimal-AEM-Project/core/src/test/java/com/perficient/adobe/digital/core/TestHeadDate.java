@@ -36,7 +36,7 @@ public class TestHeadDate {
     }
 
     @Test
-    public void testGetTitle() throws Exception{
+    public void testGetTitle(){
         headDate.init(bindings);
         SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd");
         String date = df.format(new Date());

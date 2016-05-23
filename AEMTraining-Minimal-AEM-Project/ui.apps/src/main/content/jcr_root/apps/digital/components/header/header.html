@@ -1,0 +1,80 @@
+<header role="banner">
+    <div class="search-icon" id="search-trigger-overlay">
+        <span></span>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <sly date-sly-use.headerJs="header.js" />
+            <div class="hidden-md-up mobile-logo">
+                <a href="${headerJs.homePage.path}.html">
+                    <img alt="${properties.altText}" src="${properties.logoUrl}">
+                </a>
+            </div>
+            <button class="navbar-toggler hidden-md-up" type="button"
+                data-toggle="collapse" data-target="#mobilenav">
+                <div class="menu-icon">
+                    <div class="center-bar"></div>
+                </div>
+            </button>
+            <nav class="navbar navbar-full">
+                <div class="collapse navbar-toggleable-sm" id="mobilenav">
+                    <div class="nav-block">
+                        <div class="main-nav">
+                            <ul>
+                                <li class="nav-item hidden-sm-down">
+                                    <a href="${headerJs.homePage.path}.html" class="logo">
+                                        <img alt="${properties.altText}" src="${properties.logoUrl}">
+                                    </a>
+                                </li>
+                                <sly data-sly-use.header="com.perficient.adobe.digital.core.Header"></sly>
+                                <sly data-sly-list.nav="${header.nav}">
+                                    <li class="nav-item">
+                                        <a href="${nav['link']}" class="nav-link dropdown-toggle" id="${nav['link']}Menu" data-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false"> ${nav['label']} </a>
+                                        <div class="dropdown-menu mega-menu"
+                                            aria-labelledby="${nav['label']}Menu">
+                                            <div class="menu-title">
+                                                <a href="${nav['link']}">${nav['label']}</a>
+                                            </div>
+                                            <div class="menu-block">
+                                                <ul class="list-unstyled" data-sly-list.child="${nav['page'].listChildren}" >
+                                                    <li
+                                                        class="mega-menu-item">
+                                                        <a
+                                                            href="${child.path}.html">${child.title}</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </sly>
+                            </ul>
+                        </div>
+                        <div class="utility-nav">
+                            <ul>
+                                <li>
+                                    <a href="${properties.aboutLink || '#'}">${properties.aboutLabel||'About'}</a>
+                                </li>
+                                <li>
+                                    <a href="${properties.investorsLink || '#'}">${properties.investorsLabel||'Investors'}</a>
+                                </li>
+                                <li>
+                                    <a href="${properties.careersLink || '#'}">${properties.careersLabel || 'Careers'}</a>
+                                </li>
+                                <li>
+                                    <a href="${properties.contactLink || '#'}">${properties.contactLabel || 'Contact'}</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+<!-- /Header -->
+<sly data-sly-test="${wcmmode.edit}">
+    <style>
+        header{position:relative}
+    </style>
+</sly>
