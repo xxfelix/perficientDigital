@@ -44,9 +44,9 @@
                             </logo>
                             <about
                                 jcr:primaryType="nt:unstructured"
-                                jcr:title="Abput"
+                                jcr:title="About"
                                 sling:resourceType="granite/ui/components/foundation/form/fieldset"
-                                title="Abput">
+                                title="About">
                                 <items jcr:primaryType="nt:unstructured">
                                     <label
                                         jcr:primaryType="nt:unstructured"
