@@ -1,0 +1,93 @@
+<section class="contact-form form-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12">
+             <iframe src="http://www2.perficient.com/Rebrand-2016-Form-One-Column-Template" width="100%" scrolling="no" allowtransparency="true" id="iFrameContact2" style="border:none; overflow: hidden; height: 575px;"></iframe>
+            </div>
+        </div>      
+    </div>
+</section>
+        
+<section>
+  <div class="contact-overlay overlay overlay-effect form-footer contact-form">
+    <div class="overlay-container container">
+      <div class="row">
+          <div class="col-md-12 col-sm-12">
+          <iframe src="http://www2.perficient.com/Rebrand-2016-Form-One-Column-Template" width="100%" scrolling="no" allowtransparency="true" id="iFrameContact1" style="border:none; overflow: hidden; height: 352px;"></iframe>
+          </div>
+      </div>        
+      <button type="button" class="contact-overlay-close overlay-close">Close</button>
+    </div>
+  </div>
+</section>
+
+<section class="footer-icons">
+  <div class="container">
+    <div class="row">
+     <div class="col-sm-12">
+        <ul class="hidden-sm-down pull-left">
+          <li>
+            <a href="#">
+              <img src="${properties.logoUrl}">
+            </a>
+          </li>
+          <li>
+            <a href="#">Site Map</a>
+          </li>
+          <li>
+            <a href="#">${properties.privacy || "Privacy Policy" }</a>
+            </li>
+          <li>
+            ${properties.copyright || "© 2016 Perficient, Inc. All Rights Reserved"}   
+          </li>
+        </ul>
+        <sly data-sly-use.footer="com.perficient.adobe.digital.core.Footer"/>
+        <ul class="list-unstyled"  data-sly-list.media="${footer.socialMedias}">
+          <li>
+            <a href="${media['Link']}"><i class="fa ${media['Class'] @context='styleToken'}"></i></a>
+          </li>
+        </ul> 
+      </div>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="desktop-footer">
+    <div class="footer-slogan">
+    ${properties.slogan || "Vision. Execution. Value."}
+    </div>
+    <div class="footer-links hidden-md-up">
+      <ul>
+        <li>
+          <a href="#">Site Map</a>
+        </li>
+        <li>
+          <a href="#">${properties.privacy || "Privacy Policy" }</a>
+        </li>
+      </ul>
+      <p>${properties.copyright || "© 2016 Perficient, Inc. All Rights Reserved"}</p>
+    </div>
+    <div class="footer-share">
+      <button class="dropdown-toggle" id="sharethis" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Share This Page            
+      </button>
+      <div class="dropdown-menu sharelinks" aria-labelledby="sharethis">
+        <ul class="list-unstyled">
+          <li>
+            <a href="#"><i class="fa fa-twitter"></i>Twitter</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-facebook-square"></i>Facebook</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-linkedin-square"></i>LinkedIn</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-envelope-o"></i>Email</a>
+          </li>
+        </ul> 
+      </div>
+    </div>
+  </div>
+   
+</footer>

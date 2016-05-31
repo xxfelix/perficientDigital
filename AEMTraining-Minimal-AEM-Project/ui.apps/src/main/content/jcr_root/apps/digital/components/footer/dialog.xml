@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab1
+                jcr:primaryType="cq:Panel"
+                title="Footer">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <logoUrl
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldLabel="Company Logo:"
+                        name="./logoUrl"
+                        rootPath="/content/dam"
+                        xtype="pathfield"/>
+                    <altText
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Alt Text:"
+                        name="./altText"
+                        xtype="textfield"/>
+                    <privacy
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Privacy Policy Label"
+                        name="./privacy"
+                        xtype="textfield"/>
+                    <copyright
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Copyright Label"
+                        name="./copyright"
+                        xtype="textfield"/>
+                    <slogan
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Slogan Label"
+                        name="./slogan"
+                        xtype="textfield"/>
+                </items>
+            </tab1>
+            <tab2
+                jcr:primaryType="cq:Panel"
+                title="Social Medias">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <medias
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Social Medias"
+                        name="./medias"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Social Media"
+                            options="/services/socialMedia"
+                            type="select"
+                            xtype="selection"/>
+                    </medias>
+                </items>
+            </tab2>
+        </items>
+    </items>
+</jcr:root>
